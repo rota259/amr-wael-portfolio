@@ -425,6 +425,21 @@ img {
   overflow: hidden;
 }
 
+.project-card.featured {
+  border-color: rgba(103, 215, 255, 0.42);
+  box-shadow: 0 0 0 1px rgba(103, 215, 255, 0.14), 0 22px 48px rgba(0, 0, 0, 0.32);
+}
+
+.project-card.featured::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+}
+
 .project-card::after,
 .skill-card::after,
 .cert-card::after,
